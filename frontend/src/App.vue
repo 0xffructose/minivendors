@@ -1,15 +1,7 @@
 <template>
-  <header>
-    <nav>
-      <router-link to="/">Anasayfa</router-link> |
-      <router-link to="/about">Hakkımızda</router-link>
-    </nav>
-  </header>
-
   <main>
     <router-view />
   </main>
-
 </template>
 
 <script setup lang="ts">
