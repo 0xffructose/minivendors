@@ -1,13 +1,5 @@
 <template>
-    <!--<div class="container mx-auto px-4">
-        <Navbar />
-        <main class="flex">
-            <div class="bg-amber-200 h-[75%] w-[50%]">
-                
-            </div>
-            <div class="bg-red-200 h-[75%] w-[50%]"></div>
-        </main>
-    </div>-->
+
 <div class="w-full min-h-screen bg-[#F9F9F9] text-black font-sans">
     
     <section class="h-screen w-full flex flex-col">
@@ -30,9 +22,6 @@
 
       <main class="flex-1 flex w-full">
         <div class="w-1/2 h-full p-16 flex flex-col justify-center border-r border-gray-300 bg-white">
-          <span class="text-xs font-bold tracking-widest text-gray-500 border-b border-gray-300 w-max pb-2 mb-8">
-            VERSION 2.0 RELEASED
-          </span>
           <h1 class="text-6xl font-black leading-tight tracking-tight mb-6">
             THE ARCHITECTURE OF<br />MODERN COMMERCE.
           </h1>
@@ -128,7 +117,7 @@
 
     <section class="w-full min-h-[75vh] flex flex-col md:flex-row">
       
-      <div class="w-full md:w-1/2 p-16 lg:p-24 flex flex-col justify-center bg-black text-white">
+      <div class="w-full md:w p-16 lg:p-24 flex flex-col justify-center bg-black text-white">
         <h2 class="text-5xl lg:text-7xl font-black leading-tight tracking-tight mb-6">
           READY TO DEPLOY?
         </h2>
@@ -144,33 +133,6 @@
           </button>
         </div>
       </div>
-
-      <div class="w-full md:w-1/2 p-16 lg:p-24 flex flex-col justify-center bg-[#0a0a0a]">
-        <div class="w-full max-w-lg mx-auto">
-          <div class="text-gray-600 font-mono text-xs mb-4 tracking-widest">
-            // QUICK START
-          </div>
-          
-          <div class="border border-gray-800 bg-black p-10 font-mono text-sm leading-loose shadow-2xl">
-            <div class="flex gap-4">
-              <span class="text-gray-600">$</span>
-              <span class="text-gray-300">npm install @minivendors/sdk</span>
-            </div>
-            <div class="flex gap-4">
-              <span class="text-gray-600">$</span>
-              <span class="text-gray-300">mv init --template react</span>
-            </div>
-            <div class="flex gap-4">
-              <span class="text-gray-600">$</span>
-              <span class="text-gray-300">mv deploy --prod</span>
-            </div>
-            <div class="mt-8 text-gray-500">
-              > Deployment successful. URL generated.
-            </div>
-          </div>
-        </div>
-      </div>
-
     </section>
 
     <footer class="w-full bg-white flex flex-col">
