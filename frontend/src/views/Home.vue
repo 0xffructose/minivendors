@@ -4,21 +4,7 @@
     
     <section class="h-screen w-full flex flex-col">
       
-      <nav class="h-24 shrink-0 flex items-center justify-between px-8 border-b border-gray-300 bg-white">
-        <div class="font-bold text-2xl tracking-tighter">MINIVENDORS</div>
-        
-        <div class="flex gap-8 text-sm font-semibold">
-          <a href="#" class="border-b-2 border-black pb-1">SOLUTIONS</a>
-          <a href="#" class="text-gray-500 hover:text-black">INFRASTRUCTURE</a>
-          <a href="#" class="text-gray-500 hover:text-black">PRICING</a>
-          <a href="#" class="text-gray-500 hover:text-black">DOCS</a>
-        </div>
-
-        <div class="flex gap-4">
-          <button class="border border-black px-6 py-2 text-sm font-bold hover:bg-gray-100">LOG IN</button>
-          <button class="bg-black text-white px-6 py-2 text-sm font-bold hover:bg-gray-800">GET STARTED</button>
-        </div>
-      </nav>
+      <Navbar />
 
       <main class="flex-1 flex w-full">
         <div class="w-1/2 h-full p-16 flex flex-col justify-center border-r border-gray-300 bg-white">
@@ -33,7 +19,7 @@
               INITIALIZE DEPLOYMENT
             </button>
             <button class="border border-gray-300 px-8 py-4 text-xs font-bold tracking-widest hover:bg-gray-50 flex items-center gap-2">
-              READ DOCUMENTATION <span>→</span>
+              READ DOCUMENTATION <span><i class="pi pi-arrow-right"></i></span>
             </button>
           </div>
         </div>
@@ -78,7 +64,7 @@
             Headless by default. Build bespoke storefronts with any framework while we handle the complex backend logic, cart state, and checkout flows.
           </p>
           <a href="#" class="text-xs font-bold tracking-widest flex items-center gap-2 hover:text-gray-500 w-max mt-auto uppercase">
-            EXPLORE API <span class="text-lg leading-none">↗</span>
+            EXPLORE API <span class="text-md leading-none"><i class="pi pi-arrow-up-right"></i></span>
           </a>
         </div>
 
@@ -93,7 +79,7 @@
             Deployed across a global edge network. Our infrastructure automatically provisions resources to handle traffic spikes without manual intervention.
           </p>
           <a href="#" class="text-xs font-bold tracking-widest flex items-center gap-2 hover:text-gray-500 w-max mt-auto uppercase">
-            VIEW ARCHITECTURE <span class="text-lg leading-none">↗</span>
+            VIEW ARCHITECTURE <span class="text-md leading-none"><i class="pi pi-arrow-up-right"></i></span>
           </a>
         </div>
 
@@ -108,7 +94,7 @@
             Enterprise-grade compliance out of the box. SOC2 certified, PCI DSS Level 1 compliant data vaults for sensitive customer information.
           </p>
           <a href="#" class="text-xs font-bold tracking-widest flex items-center gap-2 hover:text-gray-500 w-max mt-auto uppercase">
-            SECURITY BRIEF <span class="text-lg leading-none">↗</span>
+            SECURITY BRIEF <span class="text-md leading-none"><i class="pi pi-arrow-up-right"></i></span>
           </a>
         </div>
 
@@ -135,79 +121,19 @@
       </div>
     </section>
 
-    <footer class="w-full bg-white flex flex-col">
-      
-      <div class="grid grid-cols-2 lg:grid-cols-5 gap-12 p-16 w-full max-w-screen-2xl mx-auto">
-        <div class="flex flex-col gap-4">
-          <h4 class="text-xs font-bold tracking-widest mb-2">SOLUTIONS</h4>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Marketplaces</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Headless Commerce</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Global Payments</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Edge Delivery</a>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4 class="text-xs font-bold tracking-widest mb-2">PLATFORM</h4>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Infrastructure</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">API Reference</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">SDKs</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Security</a>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4 class="text-xs font-bold tracking-widest mb-2">RESOURCES</h4>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Documentation</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Changelog</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Guides</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Support</a>
-        </div>
-        <div class="flex flex-col gap-4">
-          <h4 class="text-xs font-bold tracking-widest mb-2">COMPANY</h4>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">About Us</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Careers</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Contact</a>
-          <a href="#" class="text-sm text-gray-600 hover:text-black">Partners</a>
-        </div>
-        <div class="flex flex-col lg:col-span-1 col-span-2 mt-4 lg:mt-0">
-          <h4 class="text-xs font-bold tracking-widest mb-6">STAY UPDATED</h4>
-          <input type="email" placeholder="EMAIL ADDRESS" class="border border-black px-4 py-3 w-full text-sm outline-none focus:ring-1 focus:ring-black placeholder-gray-400" />
-          <button class="bg-black text-white px-4 py-3 w-full text-sm font-bold tracking-widest hover:bg-gray-800 mt-[-1px]">
-            SUBSCRIBE
-          </button>
-        </div>
-      </div>
-
-      <div class="border-y border-gray-300 py-12 md:py-20 flex items-center justify-center overflow-hidden bg-white">
-        <h2 class="text-[12vw] font-black leading-none tracking-tighter text-black select-none">
-          MINIVENDORS
-        </h2>
-      </div>
-
-      <div class="flex flex-col lg:flex-row w-full text-[10px] sm:text-xs font-bold tracking-widest text-gray-500">
-        <div class="flex flex-wrap gap-4 sm:gap-8 p-6 border-b lg:border-b-0 lg:border-r border-gray-300 lg:w-1/3 justify-center lg:justify-start items-center">
-          <a href="#" class="hover:text-black">TERMS OF SERVICE</a>
-          <a href="#" class="hover:text-black">PRIVACY POLICY</a>
-          <a href="#" class="hover:text-black">COOKIE SETTINGS</a>
-        </div>
-        
-        <div class="flex gap-8 p-6 border-b lg:border-b-0 lg:border-r border-gray-300 lg:w-1/3 justify-center items-center">
-          <a href="#" class="hover:text-black">GITHUB</a>
-          <a href="#" class="hover:text-black">TWITTER</a>
-          <a href="#" class="hover:text-black">DISCORD</a>
-        </div>
-
-        <div class="flex p-6 lg:w-1/3 justify-center lg:justify-end items-center text-gray-400">
-          © 2026 MINIVENDORS. BUILT FOR SCALE.
-        </div>
-      </div>
-    </footer>
+    <Footer />
 
   </div>
 </template>
 
 <script>
 import Navbar from '../components/Navbar.vue';
+import Footer from '../components/Footer.vue';
+
 export default {
     components: {
-        Navbar
+      Navbar,
+      Footer
     }
 }
 </script>

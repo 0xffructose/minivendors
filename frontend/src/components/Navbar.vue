@@ -1,18 +1,18 @@
 <template>
     
-    <nav class="flex border-b-2 justify-center items-center h-25">
-        <div class="flex-1 mx-4">
-            <a href="/" class="font-(family-name:Inter) font-extrabold text-3xl">MINIVENDORS</a>
+    <nav class="h-24 shrink-0 flex items-center justify-between px-8 border-b border-gray-300 bg-white">
+        <div class="font-bold text-2xl tracking-tighter">MINIVENDORS</div>
+        
+        <div class="flex gap-8 text-sm font-semibold">
+            <a href="#" class="border-b-2 border-black pb-1"><router-link>SOLUTIONS</router-link></a>
+            <a href="#" class="text-gray-500 hover:text-black"><router-link>INFRASTRUCTURE</router-link></a>
+            <a href="#" class="text-gray-500 hover:text-black"><router-link to="/pricing">PRICING</router-link></a>
+            <a href="#" class="text-gray-500 hover:text-black">DOCS</a>
         </div>
-        <!--<div class="flex-1 flex justify-center items-center">
-            <ul class="flex justify-center items-center gap-4 w-full">
-                <li class="flex-1 text-center font-(family-name:Inter) font-bold">INFRASTRUCTURE</li>
-                <li class="flex-1 text-center font-(family-name:Inter) font-bold">PRICING</li>
-                <li class="flex-1 text-center font-(family-name:Inter) font-bold">DOCS</li>
-            </ul>
-        </div>-->
-        <div class="flex-1 flex justify-end items-center mx-4">
-            <button class="bg-black text-white px-10 py-2 cursor-pointer">GET STARTED</button>
+
+        <div class="flex gap-4">
+            <button class="border border-black px-6 py-2 text-sm font-bold hover:bg-gray-100">LOG IN</button>
+            <button class="bg-black text-white px-6 py-2 text-sm font-bold hover:bg-gray-800">GET STARTED</button>
         </div>
     </nav>
 

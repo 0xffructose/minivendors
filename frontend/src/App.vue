@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="selection:bg-black selection:text-white">
     <router-view />
   </main>
 </template>
