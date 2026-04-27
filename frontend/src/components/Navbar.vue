@@ -4,8 +4,7 @@
         <div class="font-bold text-2xl tracking-tighter">MINIVENDORS</div>
         
         <div class="flex gap-8 text-sm font-semibold">
-            <a href="#" class="border-b-2 border-black pb-1"><router-link>SOLUTIONS</router-link></a>
-            <a href="#" class="text-gray-500 hover:text-black"><router-link>INFRASTRUCTURE</router-link></a>
+            <a href="#" class="border-b-2 border-black pb-1"><router-link to="/features">FEATURES</router-link></a>
             <a href="#" class="text-gray-500 hover:text-black"><router-link to="/pricing">PRICING</router-link></a>
             <a href="#" class="text-gray-500 hover:text-black">DOCS</a>
         </div>
